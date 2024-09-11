@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: url(./abstract-background-with-red-lines_1361-3531.avif);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #optContainer{
+            /* border: 2px solid wheat; */
+            margin-top: 250px;
+
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.32);
+            padding: 5px;
+            height: 150px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            gap: 2px;
+            align-items: center;
+            box-shadow: 0px 2px 5px 5px rgb(248, 95, 95);
+
+
+
+        }
+
+        #optContainer form{
+            border-radius: 5px;
+            padding: 3px;
+            /* border: 2px solid white; */
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            height: 90%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            /* box-shadow: 0px 2px 5px 5px lightslategray; */
+
+
+        }
+
+        input{
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            width: 90%;
+            padding: 5px;
+        }
+
+        #optContainer button{
+            height: 30px;
+            width: 80%;
+            background-color:  rgb(255, 54, 54);
+            color: white;
+            border: 2px solid chocolate;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="optContainer" >
+        <h3 style="height: 10%; width: 90%; display: flex; justify-content: center; align-items: center;color:  rgb(255, 54, 54);">Enter your OTP</h3>
+
+        <form action="./user.html" onsubmit="return verify()">
+            <input type="text" name="" id="otpInput" placeholder="Enter OTP">
+            <button >Verify</button>
+        </form>
+        
+        
+    </div>
+    <script src="./otp.js"></script>
+</body>
+</html>
