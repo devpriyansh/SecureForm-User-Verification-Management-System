@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="sectionOne">
+      <div id="formContainer">
+        <form action="./login.html" onsubmit="return alertMes()">
+          <h1 style="color:rgb(255, 54, 54)">Sign Up</h1>
+          <br>
+          <div>
+            <label for="">First name :</label>
+            <input
+              type="text"
+              name=""
+              id="firstName"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="">Last name :</label>
+            <input
+              type="text"
+              name=""
+              id="lastName"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="">Mobile :</label>
+            <input
+              type="tel"
+              name=""
+              id="mobile"
+              placeholder="Enter your Mobile number"
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="">Email :</label>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="">Password :</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your Password"
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="">Confirm Password :</label>
+            <input
+              type="text"
+              name=""
+              id="cnfPass"
+              placeholder="Enter your Password"
+            />
+          </div>
+
+          <div id="errorShow" style="font-size: small;"></div>
+
+          <button>Submit</button>
+        </form>
+        <br />
+        <div style="color: white; ">
+          <p>Already login ? <a href="./login.html">Login</a></p>
+        </div>
+      </div>
+
+      <!-- <div id="loginContainer">
+        <form action="" onsubmit="login(event)" id="loginForm">
+          <h1>Login</h1>
+          <input type="email" placeholder="Email" id="loginEmail" />
+          <input type="password" placeholder="Password" id="loginPassword" />
+          <div id="loginShow"></div>
+          <button id="loginButton">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <br /> -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
